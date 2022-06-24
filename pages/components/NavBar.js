@@ -8,17 +8,17 @@ export default function NavBar() {
   return (
     <nav>
       <Link href="/">
-        <a className={router.pathname === "/" && classes.active}>
+        <a className={`${classes.link} ${router.pathname === "/" && classes.active}`}>
           Home
         </a>
       </Link>
       <Link href="/sub">
-        <a className={router.pathname === "/sub" && classes.active}>
+        <a className={[classes.link, router.pathname === "/sub" && classes.active].join(" ")}>
           Sub
         </a>
       </Link>
       <Link href="/hello">
-        <a className={router.pathname === "/hello" && classes.active}>
+        <a className={`${classes.link} ${router.pathname === "/hello" && classes.active}`}>
           Hello
         </a>
       </Link>
