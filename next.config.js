@@ -1,4 +1,4 @@
-const API_KEY = '669c709b6e1d29c42f997fda667d3fe9';
+const API_KEY = process.env.API_KEY;
 
 /** @type {import('next').NextConfig} */
 module.exports = {
